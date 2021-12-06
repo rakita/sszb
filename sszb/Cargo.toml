@@ -1,0 +1,20 @@
+[package]
+name = "sszb"
+version = "0.4.0"
+authors = ["Paul Hauner <paul@sigmaprime.io>", "Dragan Rakita <dragan0rakita@gmail.com>"]
+edition = "2018"
+description = "SimpleSerialize-BigEndian (SSZB)"
+license = "Apache-2.0"
+
+[lib]
+name = "sszb"
+
+[dev-dependencies]
+
+[dependencies]
+ethereum-types = "0.12.1"
+smallvec = "1.6.1"
+sszb_derive = {path="../sszb_derive", version="0.3.0"}
+
+[features]
+arbitrary = ["ethereum-types/arbitrary"]

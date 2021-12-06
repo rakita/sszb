@@ -1,0 +1,17 @@
+[package]
+name = "sszb_derive"
+version = "0.3.0"
+authors = ["Paul Hauner <paul@sigmaprime.io>", "Dragan Rakita <dragan0rakita@gmail.com>"]
+edition = "2018"
+description = "Procedural derive macros to accompany the sszb crate."
+license = "Apache-2.0"
+
+[lib]
+name = "sszb_derive"
+proc-macro = true
+
+[dependencies]
+syn = "1.0.42"
+proc-macro2 = "1.0.23"
+quote = "1.0.7"
+darling = "0.13.0"
