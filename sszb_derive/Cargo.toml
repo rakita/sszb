@@ -5,6 +5,7 @@ authors = ["Paul Hauner <paul@sigmaprime.io>", "Dragan Rakita <dragan0rakita@gma
 edition = "2018"
 description = "Procedural derive macros to accompany the sszb crate."
 license = "Apache-2.0"
+repository = "https://github.com/rakita/sszb"
 
 [lib]
 name = "sszb_derive"

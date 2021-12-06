@@ -5,11 +5,10 @@ authors = ["Paul Hauner <paul@sigmaprime.io>", "Dragan Rakita <dragan0rakita@gma
 edition = "2018"
 description = "SimpleSerialize-BigEndian (SSZB)"
 license = "Apache-2.0"
+repository = "https://github.com/rakita/sszb"
 
 [lib]
 name = "sszb"
-
-[dev-dependencies]
 
 [dependencies]
 ethereum-types = "0.12.1"
