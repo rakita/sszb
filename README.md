@@ -1,3 +1,3 @@
-# SSZ-BigEndian -> SSZB
+## SSZ-BigEndian -> SSZB
 
-SSZ with BigEndian notation.
+Original library is from lighthouse modified with BigEndian notation.

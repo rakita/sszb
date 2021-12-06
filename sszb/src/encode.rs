@@ -113,7 +113,7 @@ impl<'a> SszEncoder<'a> {
         F: Fn(&mut Vec<u8>),
     {
         if is_sszb_fixed_len {
-            sszb_append(&mut self.buf);
+            sszb_append(self.buf);
         } else {
             self.buf
                 .extend_from_slice(&encode_length(self.offset + self.variable_bytes.len()));
@@ -129,7 +129,7 @@ impl<'a> SszEncoder<'a> {
     pub fn finalize(&mut self) -> &mut Vec<u8> {
         self.buf.append(&mut self.variable_bytes);
 
-        &mut self.buf
+        self.buf
     }
 }
 
